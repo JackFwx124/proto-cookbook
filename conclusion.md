@@ -1,0 +1,1 @@
+By the end of this project you’ll have a solid understanding of how to access process, and visualize weather data from the NOMADS server using Python. You’ll know how to retrieve variables like 2 meter temperature and mean sea level pressure, and turn them into clear informative weather maps with Cartopy.

@@ -1,40 +1,36 @@
-# (Replace_with_your_title) Cookbook
+# (Jacks cookbook) Cookbook
 
-<img src="thumbnails/thumbnail.png" alt="thumbnail" width="300"/>
+<img src="thumbnails/mslp_northeast.png" alt="thumbnail" width="300"/>
 
 [![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-_See the [Cookbook Contributor's Guide](https://projectpythia.org/cookbook-guide) for step-by-step instructions on how to create your new Cookbook and get it hosted on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org)!_
+
 
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+This notebook will show you how to plot 2-meter temperature and mean sea level pressure (MSLP) data on a map using Cartopy. It’s useful because you’ll learn how to work with weather data and make clear, professional-looking weather maps. By the end, you’ll know how to read data, plot it, and customize your own weather maps.
 
 ## Authors
 
-[First Author](https://github.com/first-author1), [Second Author](https://github.com/second-author2), etc. _Acknowledge primary content authors here_
-
-### Contributors
-
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
-</a>
+[Jack Fordyce](https://github.com/DAES433533/jfordyce), 
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+Getting Started with NOMADS Data: In this section, you’ll learn how to access and load weather data from the NOMADS server, including variables like 2-meter temperature and mean sea level pressure (MSLP). You’ll also set up the Python libraries needed for the analysis.
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+Plotting Weather Maps: This section walks you through visualizing the NOMADS data using Cartopy. You’ll create weather maps showing 2-meter temperature and MSLP, customize the map’s appearance, and learn the basics of weather data visualization in Python.
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+### Section 1 ( Getting Started with NOMADS Data)
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+In this section, you’ll learn how to access and load weather data from the NOMADS (NOAA Operational Model Archive and Distribution System) server. You’ll import the necessary Python libraries, open the dataset, and prepare variables like 2-meter temperature and mean sea level pressure (MSLP) for plotting. This section sets up everything you need before creating weather maps with Cartopy.
 
-(Add content for this section, e.g., "Example workflows include ... ")
+### Section 2 ( Plotting Weather Maps )
+
+In this section, you’ll learn how to visualize the NOMADS data by plotting 2-meter temperature and mean sea level pressure (MSLP) on a map using Cartopy. You’ll go through the steps of setting up the map projection, adding features like coastlines and borders, and customizing your plots for a clean, professional look. By the end, you’ll know how to create your own weather maps to analyze different atmospheric patterns.
 
 ## Running the Notebooks
 
@@ -71,17 +67,17 @@ If you are interested in running this material locally on your computer, you wil
 1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/ProjectPythia/proto-cookbook.git
    ```
 
-1. Move into the `cookbook-example` directory
+1. Move into the `proto-cookbook` directory
    ```bash
    cd cookbook-example
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate proto-cookbook
    ```
 1. Move into the `notebooks` directory and start up Jupyterlab
    ```bash
